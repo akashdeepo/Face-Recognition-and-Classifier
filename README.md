@@ -14,3 +14,14 @@ This code uses the OpenCV library to detect faces in images. It creates a face c
 8. It groups the images by the predicted labels, which allows it to group together images that contain the same person.
 9. Finally, the code prints the number of groups and displays the images in each group.
 10. At the end the code creates a new folder for each group of images, using the predicted label of the faces in the group as the name of the folder. It then saves the images in each group to the corresponding folder. This allows the code to organize the images into separate folders based on the faces they contain.
+
+**NOTES**
+1. I use haarcascade_frontal_face_classifier.xml  you can make your own classifier with tools like cascade trainer and crop a bunch of positive and negative images to make a cascade.xml file and run that through.
+2. Make a folder of images in the main directory which need classification.
+3. The output should be another folder containing all the face groups.
+
+
+**TODO**
+1. Move original images to said groups
+2. Check the accuracy in larger data sets
+3. Convert the greyscale image tags as icons for the folders
